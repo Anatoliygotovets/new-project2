@@ -1,0 +1,29 @@
+git push -u origin branch-name
+git pull
+git checkout branch-name
+git branch
+git push
+git branch -a
+добавление в стэш откладывание
+git stash
+git stash list
+git stash pop
+git stash drop N удалить стэш
+Вливать все коммиты из отпочкованных веток неудобно. Для подтягивания изменений в некоторую ветку 
+из вливаемой используют сложение всех коммитов в один.
+Для этого выполните команду git merge --squash “название вливаемой ветки X”.
+Разрешите все конфликты по вашему усмотрению.
+Если вы запутались и хотите отменить слияние, то git merge --abort вам не поможет, 
+используйте git reset --merge.
+git diff 'file' - посмотреть изменение в файле
+git diff - показывает изменение во всех файлах
+git diff 4 символа хэш коммита
+revert удаляет коммиты 
+revert --no-comit <commit>
+git reset --soft <commit> сброс коммита в индекс
+git reset HEAD~1 сброс коммита из индекса цифра колво коммитов
+git reset --hard жестки сброс коммитов
+
+git commit --amend -m 'новый коментарий'
+
+git commit --amend --no-edit без редактирования последнего комита
